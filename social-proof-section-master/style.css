@@ -1,0 +1,160 @@
+:root{
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    margin: 15vh 10vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 0 0 2em 0;
+    height: auto;
+    /*border: 1px solid black;*/
+}
+
+.column h1 {
+    padding-right: 7em;
+    color: var(--veryDarkMagenta);
+    line-height: 120%;
+    margin-bottom: 0.5em;
+}
+
+.column p {
+    padding-right: 5em;
+    color: var(--DarkGrayishMagenta);
+    font-weight: 500;
+    line-height: 125%;
+}
+
+.jumbotron {
+    padding: 1em;
+}
+
+/*
+.rating-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+*/
+
+.rating {
+    font-size: 0.7em;
+    background-color: var(--LightGrayishMagenta);
+    margin: 1.25em;
+    width: 75%;
+    padding: 1.2em 0 1.2em 2em;
+    border-radius: 0.5em;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.rating p {
+    color: var(--veryDarkMagenta);
+    font-weight: 900;
+    margin: 0 0 0 2.5em;
+}
+
+.star img {
+    transform: scale(0.85);
+}
+
+/* Positioning */
+#rating2 {
+    left: 3em;
+}
+
+#rating3 {
+    left: 6em;
+}
+
+/* Cards */
+
+.deck {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.8em;
+    background-color: var(--veryDarkMagenta);
+    border-radius: 0.5em;
+    padding: 2em;
+    position: relative;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5em;
+}
+
+.card-heading img {
+    border-radius: 50%;
+    width: 15%;
+    margin-right: 1em;
+}
+
+.user {
+    margin: 0 0.5em;
+    line-height: 125%;
+}
+
+.user h6 {
+    font-size: 0.8em;
+    color: var(--White);
+}
+
+.user p {
+    font-size: 0.8em;
+    color: var(--softPink);
+}
+
+.card-content {
+    margin: 2em 0 0 0;
+    font-size: 0.85em;
+    color: var(--LightGrayishMagenta);
+    line-height: 150%;
+}
+
+/* Card Position */
+#card2 {
+    top: 2em;
+}
+
+#card3 {
+    top: 4em;
+}
